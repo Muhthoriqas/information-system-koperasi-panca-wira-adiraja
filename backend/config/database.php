@@ -34,7 +34,7 @@ return [
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),
-            'database' => 'D:\SKRIPSI\information-system-koperasi-panca-wira-adiraja\backend\database\db_is_panca_wira_adiraja.sqlite',
+            'database' => env('DB_DATABASE', database_path('db_is_panca_wira_adiraja.sqlite')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
             'busy_timeout' => null,
